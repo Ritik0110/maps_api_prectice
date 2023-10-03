@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:maps_api_prectice/MyHomeScreen/home_screen.dart';
+
+import 'package:maps_api_prectice/placeApi/place_api_google.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const GooglePlaceApi(),
     );
   }
 }
